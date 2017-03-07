@@ -1,0 +1,94 @@
+.buttons {
+	width: 750px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.button {
+	@include text-hide();
+	padding: 15px;
+	width: 150px;
+	height: 150px;
+	display: block;
+	cursor: pointer;
+	background-color: $white;
+	float: left;
+	position: relative;
+	outline: none;
+	&:nth-child(7),
+	&:nth-child(9),
+	&:nth-child(11) {
+		margin-left: 450px;
+	}
+	&:nth-child(1),
+	&:nth-child(2),
+	&:nth-child(3),
+	&:nth-child(4),
+	&:nth-child(12),
+	&:nth-child(13),
+	&:nth-child(14),
+	&:nth-child(15) {
+		border-right: 1px solid $border-color;
+	}
+	&:nth-child(6),
+	&:nth-child(7) {
+		border-top: 1px solid $border-color;
+	}
+	&:nth-child(6),
+	&:nth-child(7),
+	&:nth-child(8),
+	&:nth-child(9),
+	&:nth-child(10),
+	&:nth-child(11) {
+		border-bottom: 1px solid $border-color;
+	}
+	.tangram {
+		padding: 0;
+		width: auto;
+		height: auto;
+		top: 0;
+		left: 0;
+		&.tangram--basic {
+			@include transform(scale(0.3));
+			top: 45px;
+    		left: 43px;
+		}
+		&.tangram--cat,
+		&.tangram--rabbit {
+			@include transform(scale(0.2));
+			top: 31px;
+			left: 48px;
+		}
+		&.tangram--swan {
+			@include transform(scale(0.2));
+			top: 35px;
+			left: 50px;
+		}
+		&.tangram--bat {
+			@include transform(rotate(20deg) scale(0.25));
+			top: 6px;
+			left: 40px;
+		}
+		&.tangram--bear {
+			@include transform(scale(0.2));
+			top: 31px;
+			left: 30px;
+		}
+		&.tangram--giraffe {
+			@include transform(scale(0.22));
+			top: 45px;
+			left: 25px;
+		}
+		&.tangram--fish {
+			@include transform(scale(0.25));
+			top: 20px;
+			left: 30px;
+		}
+		&.tangram--butterfly {
+			@include transform(rotate(-30deg) scale(0.25));
+			top: 60px;
+			left: 8px;
+		}
+	}
+}

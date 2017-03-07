@@ -1,0 +1,44 @@
+html,
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	color: $dark-grey;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	background: url('../images/bg.jpg') $background-color repeat;
+}
+
+h1 {
+	font-family: $font-family-headlines;
+	font-size: $font-size-h1;
+	font-weight: normal;
+	text-shadow: 
+		1px 1px 0 $white,
+		4px 4px 0 #5db2a8;
+	letter-spacing: 0.1em;
+	margin: 0.2em 0 0.4em;
+	text-align: center;
+}
+
+a {
+	color: $dark-grey;
+	text-decoration: none;
+	@include transition(all 0.3s);
+	&:hover {
+		color: $turquoise;
+		@include transition(all 0.3s);
+	}
+	&.footer__link {
+		text-align: center;
+		display: block;
+		margin-top: 20px;
+	}
+}
+
+.tangram__container {
+	width: 750px;
+	height: 750px;
+	background-color: #f0e7df;
+	position: relative;
+}

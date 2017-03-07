@@ -1,0 +1,342 @@
+.triangle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	transition: all 2s;
+	&--pink {
+		border-left: 50px solid $pink;
+		border-top: 50px solid transparent;
+		border-bottom: 50px solid transparent;
+	}
+	&--purple {
+		border-left: 50px solid $purple;
+		border-top: 50px solid transparent;
+		border-bottom: 50px solid transparent;
+	}
+	&--turquoise {
+		border-left: 70px solid $turquoise;
+		border-top: 70px solid transparent;
+		border-bottom: 70px solid transparent;
+	}
+	&--yellow {
+		border-left: 100px solid $yellow;
+		border-top: 100px solid transparent;
+		border-bottom: 100px solid transparent;
+	}
+	&--red {
+		border-left: 100px solid $red;
+		border-top: 100px solid transparent;
+		border-bottom: 100px solid transparent;
+	}
+}
+
+.square {
+	position: absolute;
+	transition: all 2s;
+	&--orange {
+		background-color: $orange;
+		width: 70px;
+		height: 70px;
+	}
+}
+
+.parallelogram {
+	position: absolute;
+	transition: all 2s;
+	&--green {
+		background-color: $green;
+		width: 64px; 
+		height: 70px;
+	}
+}
+
+
+.tangram {
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	top: 150px;
+	left: 150px;
+	@include transition(all 1s);
+
+	&--basic {
+		padding: 124px 0 0 120px;
+		.triangle {
+			&--pink {
+				 @include transform(translate(160px, -2px) rotate(180deg));
+			}
+			&--purple {
+				@include transform(translate(79px, 79px) rotate(270deg));
+			}
+			&--turquoise {
+				@include transform(translate(150px, 109px) rotate(45deg));
+			}
+			&--yellow {
+				@include transform(translate(0, 0));
+			}
+			&--red {
+				@include transform(translate(54px, -52px) rotate(90deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(122px, 66px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(45px, 146px) rotate(-45deg) skew(45deg));
+			}
+		}
+	}
+
+	&--cat {
+		padding: 30px 0 0 75px;
+		.triangle {
+			&--pink {
+			}
+			&--purple {
+				@include transform(translate(52px, 0) rotate(180deg));
+			}
+			&--turquoise {
+				@include transform(translate(10px, 132px) rotate(180deg));
+			}
+			&--yellow {
+				@include transform(translate(85px, 132px));
+			}
+			&--red {
+				@include transform(translate(100px, 245px) rotate(45deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(16px, 70px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(222px, 310px) skew(-45deg));
+			}
+		}
+	}
+
+	&--swan {
+		padding: 55px 0 0 110px;
+		.triangle {
+			&--pink {
+				@include transform(translate(-6px, 155px) rotate(0deg));
+			}
+			&--purple {
+				@include transform(translate(3px, 4px) rotate(45deg));
+			}
+			&--turquoise {
+				@include transform(translate(-3px, 189px) rotate(180deg));
+			}
+			&--yellow {
+				@include transform(translate(57px, 194px) rotate(135deg));
+			}
+			&--red {
+				@include transform(translate(127px, 136px) rotate(90deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(12px, 116px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(42px, 38px) rotate(45deg) skew(45deg));
+			}
+		}
+	}
+
+	&--rabbit {
+		padding: 23px 0 0 105px;
+		.triangle {
+			&--pink {
+				@include transform(translate(61px, 333px) rotate(45deg));
+			}
+			&--purple {
+				@include transform(translate(20px, 210px) rotate(180deg));
+			}
+			&--turquoise {
+				@include transform(translate(99px, 307px) rotate(135deg));
+			}
+			&--yellow {
+				@include transform(translate(60px, 120px) rotate(135deg));
+			}
+			&--red {
+				@include transform(translate(130px, 196px) rotate(-45deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(0, 74px) rotate(0deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(76px, 0px) skew(-45deg));
+			}
+		}
+	}
+
+	&--bat {
+		padding: 0;
+		@include transform(rotate(20deg));
+		.triangle {
+			&--pink {
+				@include transform(translate(168px, 85px) rotate(0deg));
+			}
+			&--purple {
+				@include transform(translate(224px, 85px) rotate(180deg));
+			}
+			&--turquoise {
+				@include transform(translate(227px, 214px) rotate(90deg));
+			}
+			&--yellow {
+				@include transform(translate(70px, 94px) rotate(-90deg));
+			}
+			&--red {
+				@include transform(translate(272px, 94px) rotate(-90deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(186px, 153px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(157px, 249px) rotate(0deg) skew(45deg));
+			}
+		}
+	}
+
+	&--bear {
+		padding: 0;
+		.triangle {
+			&--pink {
+				@include transform(translate(59px, 122px) rotate(45deg));
+			}
+			&--purple {
+				@include transform(translate(340px, 274px) rotate(45deg));
+			}
+			&--turquoise {
+				@include transform(translate(170px, 124px) rotate(135deg));
+			}
+			&--yellow {
+				@include transform(translate(330px, 118px) rotate(0deg));
+			}
+			&--red {
+				@include transform(translate(241px, 55px) rotate(-45deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(106px, 120px) rotate(0deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(145px, 222px) skew(-45deg));
+			}
+		}
+	}
+
+	&--giraffe {
+		padding: 0;
+		margin-top: -25px;
+		.triangle {
+			&--pink {
+				@include transform(translate(164px, 50px) rotate(0deg));
+			}
+			&--purple {
+				@include transform(translate(218px, 260px) rotate(180deg));
+			}
+			&--turquoise {
+				@include transform(translate(100px, 40px) rotate(45deg));
+			}
+			&--yellow {
+				@include transform(translate(272px, 260px) rotate(0deg));
+			}
+			&--red {
+				@include transform(translate(166px, 263px) rotate(0deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(181px, 222px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(157px, 145px) rotate(135deg) skew(-45deg));
+			}
+		}
+	}
+
+	&--fish{
+		padding: 0 0 0 50px;
+		.triangle {
+			&--pink {
+				@include transform(translate(162px, 119px) rotate(135deg));
+			}
+			&--purple {
+				@include transform(translate(162px, 231px) rotate(225deg));
+			}
+			&--turquoise {
+				@include transform(translate(244px, 192px) rotate(180deg));
+			}
+			&--yellow {
+				@include transform(translate(80px, 86px) rotate(45deg));
+			}
+			&--red {
+				@include transform(translate(80px, 160px) rotate(-45deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(169px, 190px) rotate(0deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(246px, 155px) rotate(90deg) skew(45deg));
+			}
+		}
+	}
+
+	&--butterfly {
+		padding: 40px 0 0 30px;
+		@include transform(rotate(-30deg));
+		.triangle {
+			&--pink {
+				@include transform(translate(118px, 240px) rotate(240deg));
+			}
+			&--purple {
+				@include transform(translate(147px, 130px) rotate(150deg));
+			}
+			&--turquoise {
+				@include transform(translate(244px, 196px) rotate(160deg));
+			}
+			&--yellow {
+				@include transform(translate(70px, 50px) rotate(-30deg));
+			}
+			&--red {
+				@include transform(translate(263px, 42px) rotate(205deg));
+			}
+		}
+		.square {
+			&--orange {
+				@include transform(translate(139px, 204px) rotate(15deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(222px, 163px) rotate(70deg) skew(45deg));
+			}
+		}
+	}
+}
