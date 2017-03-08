@@ -52,3 +52,73 @@ a {
 	background-color: #f0e7df;
 	position: relative;
 }
+
+
+.badge {
+	height: 100px;
+	width: 100px;
+	background: $turquoise;
+	position: absolute;
+	top: -120px;
+	right: -50px;
+	@include transform(rotate(35deg) scale(0.8));
+	border-radius: 7px;
+	&:before {
+		height: 100px;
+		width: 100px;
+		background: $turquoise;
+		content:"";
+		position: absolute;
+		@include transform(rotate(15deg));
+		border-radius: 7px;
+	}
+	&:after {
+		height: 100px;
+		width: 100px;
+		background: $turquoise;
+		content:"css only";
+		color: $white;
+		font-size: 40px;
+		text-align: center;
+		line-height: 35px;
+		padding-top: 7px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		font-family: $font-family-headlines;
+		text-shadow: 
+		1px 1px 0 $turquoise,
+		4px 4px 0 #444;
+		letter-spacing: 0.1em;
+		position: absolute;
+		@include transform(rotate(-15deg));
+		border-radius: 7px;
+	}
+}
+
+.badge__inner {
+	height: 100px;
+	width: 100px;
+	background: $turquoise;
+	position: absolute;
+	transform: rotate(45deg);
+	border-radius: 7px;
+	&:before {
+		height: 100px;
+		width: 100px;
+		background: $turquoise;
+		content:"";
+		position: absolute;
+		@include transform(rotate(15deg));
+		border-radius: 7px;
+	}
+	&:after {
+		height: 100px;
+		width: 100px;
+		background: $turquoise;
+		content:"";
+		position: absolute;
+		@include transform(rotate(-15deg));
+		border-radius: 7px;
+	}
+}

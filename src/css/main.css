@@ -426,6 +426,87 @@ a {
   background-color: #f0e7df;
   position: relative; }
 
+.badge {
+  height: 100px;
+  width: 100px;
+  background: #189184;
+  position: absolute;
+  top: -120px;
+  right: -50px;
+  -moz-transform: rotate(35deg) scale(0.8);
+  -o-transform: rotate(35deg) scale(0.8);
+  -ms-transform: rotate(35deg) scale(0.8);
+  -webkit-transform: rotate(35deg) scale(0.8);
+  transform: rotate(35deg) scale(0.8);
+  border-radius: 7px; }
+  .badge:before {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    border-radius: 7px; }
+  .badge:after {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "css only";
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    line-height: 35px;
+    padding-top: 7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "BebasNeue", sans-serif;
+    text-shadow: 1px 1px 0 #189184, 4px 4px 0 #444;
+    letter-spacing: 0.1em;
+    position: absolute;
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    border-radius: 7px; }
+
+.badge__inner {
+  height: 100px;
+  width: 100px;
+  background: #189184;
+  position: absolute;
+  transform: rotate(45deg);
+  border-radius: 7px; }
+  .badge__inner:before {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    border-radius: 7px; }
+  .badge__inner:after {
+    height: 100px;
+    width: 100px;
+    background: #189184;
+    content: "";
+    position: absolute;
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    border-radius: 7px; }
+
 .triangle {
   width: 0;
   height: 0;
