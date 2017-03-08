@@ -27,12 +27,6 @@ module.exports = function (grunt) {
 				cwd: 'src',
 				src: 'css/**',
 				dest: 'dist/'
-			},
-			js: {
-				expand: true,
-				cwd: 'src',
-				src: 'js/**',
-				dest: 'dist/'
 			}
 		},
 
@@ -58,18 +52,6 @@ module.exports = function (grunt) {
 					'sass:dev',
 					'copy:css',
 					'notify:watch'
-				],
-				options: {
-					atBegin: true
-				}
-			},
-
-			js: {
-				files: [
-					'src/js/**/*.js'
-				],
-				tasks: [
-					'copy:js'
 				],
 				options: {
 					atBegin: true

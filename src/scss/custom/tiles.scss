@@ -50,6 +50,12 @@
 	}
 }
 
+.tangram.main--tangram,
+.tangram__button {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 .tangram {
 	position: absolute;
@@ -58,509 +64,525 @@
 	top: 150px;
 	left: 150px;
 	@include transition(all 1s);
+}
 
-	&--basic {
-		padding: 124px 0 0 120px;
-		.triangle {
-			&--pink {
-				 @include transform(translate(160px, -2px) rotate(180deg));
-			}
-			&--purple {
-				@include transform(translate(79px, 79px) rotate(270deg));
-			}
-			&--turquoise {
-				@include transform(translate(150px, 109px) rotate(45deg));
-			}
-			&--yellow {
-				@include transform(translate(0, 0));
-			}
-			&--orange {
-				@include transform(translate(54px, -52px) rotate(90deg));
-			}
+input[type=radio].button--basic:checked ~ div.main--tangram,
+.tangram--basic {
+	padding: 124px 0 0 120px;
+	.triangle {
+		&--pink {
+			 @include transform(translate(160px, -2px) rotate(180deg));
 		}
-		.square {
-			&--red {
-				@include transform(translate(122px, 66px) rotate(45deg));
-			}
+		&--purple {
+			@include transform(translate(79px, 79px) rotate(270deg));
 		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(45px, 146px) rotate(-45deg) skew(45deg));
-			}
+		&--turquoise {
+			@include transform(translate(150px, 109px) rotate(45deg));
+		}
+		&--yellow {
+			@include transform(translate(0, 0));
+		}
+		&--orange {
+			@include transform(translate(54px, -52px) rotate(90deg));
 		}
 	}
-
-	&--cat {
-		padding: 30px 0 0 75px;
-		.triangle {
-			&--pink {
-			}
-			&--purple {
-				@include transform(translate(52px, 0) rotate(180deg));
-			}
-			&--turquoise {
-				@include transform(translate(10px, 132px) rotate(180deg));
-			}
-			&--yellow {
-				@include transform(translate(85px, 132px));
-			}
-			&--orange {
-				@include transform(translate(100px, 245px) rotate(45deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(16px, 70px) rotate(45deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(222px, 310px) skew(-45deg));
-			}
+	.square {
+		&--red {
+			@include transform(translate(122px, 66px) rotate(45deg));
 		}
 	}
-
-	&--swan {
-		padding: 55px 0 0 110px;
-		.triangle {
-			&--pink {
-				@include transform(translate(-6px, 155px) rotate(0deg));
-			}
-			&--purple {
-				@include transform(translate(3px, 4px) rotate(45deg));
-			}
-			&--turquoise {
-				@include transform(translate(-3px, 189px) rotate(180deg));
-			}
-			&--yellow {
-				@include transform(translate(57px, 194px) rotate(135deg));
-			}
-			&--orange {
-				@include transform(translate(127px, 136px) rotate(90deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(12px, 116px) rotate(45deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(42px, 38px) rotate(45deg) skew(45deg));
-			}
+	.parallelogram {
+		&--green {
+			@include transform(translate(45px, 146px) rotate(-45deg) skew(45deg));
 		}
 	}
+}
 
-	&--rabbit {
-		padding: 23px 0 0 105px;
-		.triangle {
-			&--pink {
-				@include transform(translate(61px, 333px) rotate(45deg));
-			}
-			&--purple {
-				@include transform(translate(20px, 210px) rotate(180deg));
-			}
-			&--turquoise {
-				@include transform(translate(99px, 307px) rotate(135deg));
-			}
-			&--yellow {
-				@include transform(translate(60px, 120px) rotate(135deg));
-			}
-			&--orange {
-				@include transform(translate(130px, 196px) rotate(-45deg));
-			}
+input[type=radio].button--cat:checked ~ div.main--tangram,
+.tangram--cat {
+	padding: 30px 0 0 75px;
+	.triangle {
+		&--pink {
 		}
-		.square {
-			&--red {
-				@include transform(translate(0, 74px) rotate(0deg));
-			}
+		&--purple {
+			@include transform(translate(52px, 0) rotate(180deg));
 		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(76px, 0px) skew(-45deg));
-			}
+		&--turquoise {
+			@include transform(translate(10px, 132px) rotate(180deg));
+		}
+		&--yellow {
+			@include transform(translate(85px, 132px));
+		}
+		&--orange {
+			@include transform(translate(100px, 245px) rotate(45deg));
 		}
 	}
-
-	&--bat {
-		padding: 0;
-		@include transform(rotate(20deg));
-		.triangle {
-			&--pink {
-				@include transform(translate(168px, 85px) rotate(0deg));
-			}
-			&--purple {
-				@include transform(translate(224px, 85px) rotate(180deg));
-			}
-			&--turquoise {
-				@include transform(translate(227px, 214px) rotate(90deg));
-			}
-			&--yellow {
-				@include transform(translate(70px, 94px) rotate(-90deg));
-			}
-			&--orange {
-				@include transform(translate(272px, 94px) rotate(-90deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(186px, 153px) rotate(45deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(157px, 249px) rotate(0deg) skew(45deg));
-			}
+	.square {
+		&--red {
+			@include transform(translate(16px, 70px) rotate(45deg));
 		}
 	}
-
-	&--bear {
-		padding: 0;
-		.triangle {
-			&--pink {
-				@include transform(translate(59px, 122px) rotate(45deg));
-			}
-			&--purple {
-				@include transform(translate(340px, 274px) rotate(45deg));
-			}
-			&--turquoise {
-				@include transform(translate(170px, 124px) rotate(135deg));
-			}
-			&--yellow {
-				@include transform(translate(330px, 118px) rotate(0deg));
-			}
-			&--orange {
-				@include transform(translate(241px, 55px) rotate(-45deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(106px, 120px) rotate(0deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(145px, 222px) skew(-45deg));
-			}
+	.parallelogram {
+		&--green {
+			@include transform(translate(222px, 310px) skew(-45deg));
 		}
 	}
+}
 
-	&--giraffe {
-		padding: 0;
-		margin-top: -25px;
-		.triangle {
-			&--pink {
-				@include transform(translate(164px, 50px) rotate(0deg));
-			}
-			&--purple {
-				@include transform(translate(218px, 260px) rotate(180deg));
-			}
-			&--turquoise {
-				@include transform(translate(100px, 40px) rotate(45deg));
-			}
-			&--yellow {
-				@include transform(translate(272px, 260px) rotate(0deg));
-			}
-			&--orange {
-				@include transform(translate(166px, 263px) rotate(0deg));
-			}
+input[type=radio].button--swan:checked ~ div.main--tangram,
+.tangram--swan {
+	padding: 55px 0 0 110px;
+	.triangle {
+		&--pink {
+			@include transform(translate(-6px, 155px) rotate(0deg));
 		}
-		.square {
-			&--red {
-				@include transform(translate(181px, 222px) rotate(45deg));
-			}
+		&--purple {
+			@include transform(translate(3px, 4px) rotate(45deg));
 		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(157px, 145px) rotate(135deg) skew(-45deg));
-			}
+		&--turquoise {
+			@include transform(translate(-3px, 189px) rotate(180deg));
+		}
+		&--yellow {
+			@include transform(translate(57px, 194px) rotate(135deg));
+		}
+		&--orange {
+			@include transform(translate(127px, 136px) rotate(90deg));
 		}
 	}
-
-	&--fish{
-		padding: 0 0 0 50px;
-		.triangle {
-			&--pink {
-				@include transform(translate(162px, 119px) rotate(135deg));
-			}
-			&--purple {
-				@include transform(translate(162px, 231px) rotate(225deg));
-			}
-			&--turquoise {
-				@include transform(translate(244px, 192px) rotate(180deg));
-			}
-			&--yellow {
-				@include transform(translate(80px, 86px) rotate(45deg));
-			}
-			&--orange {
-				@include transform(translate(80px, 160px) rotate(-45deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(169px, 190px) rotate(0deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(246px, 155px) rotate(90deg) skew(45deg));
-			}
+	.square {
+		&--red {
+			@include transform(translate(12px, 116px) rotate(45deg));
 		}
 	}
-
-	&--snake {
-		padding: 0 0 0 12px;
-		@include transform(scale(0.8));
-		.triangle {
-			&--pink {
-				@include transform(translate(7px, 162px) rotate(45deg));
-			}
-			&--purple {
-				@include transform(translate(-30px, 134px) rotate(90deg));
-			}
-			&--turquoise {
-				@include transform(translate(116px, 165px) rotate(135deg));
-			}
-			&--yellow {
-				@include transform(translate(281px, 109px) rotate(-90deg));
-			}
-			&--orange {
-				@include transform(translate(176px, 213px) rotate(90deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(53px, 160px) rotate(0deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(374px, 250px) rotate(45deg) skew(-45deg));
-			}
+	.parallelogram {
+		&--green {
+			@include transform(translate(42px, 38px) rotate(45deg) skew(45deg));
 		}
 	}
+}
 
-	&--turtle {
-		padding: 0;
-		.triangle {
-			&--pink {
-				@include transform(translate(335px, 222px) rotate(180deg));
-			}
-			&--purple {
-				@include transform(translate(133px, 225px) rotate(0deg));
-			}
-			&--turquoise {
-				@include transform(translate(335px, 127px) rotate(0deg));
-			}
-			&--yellow {
-				@include transform(translate(246px, 62px) rotate(-45deg));
-			}
-			&--orange {
-				@include transform(translate(172px, 135px) rotate(135deg));
-			}
+input[type=radio].button--rabbit:checked ~ div.main--tangram,
+.tangram--rabbit {
+	padding: 23px 0 0 105px;
+	.triangle {
+		&--pink {
+			@include transform(translate(61px, 333px) rotate(45deg));
 		}
-		.square {
-			&--red {
-				@include transform(translate(40px, 130px) rotate(0deg));
-			}
+		&--purple {
+			@include transform(translate(20px, 210px) rotate(180deg));
 		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(114px, 166px) rotate(-90deg) skew(-45deg));
-				width: 69px;
-			}
+		&--turquoise {
+			@include transform(translate(99px, 307px) rotate(135deg));
+		}
+		&--yellow {
+			@include transform(translate(60px, 120px) rotate(135deg));
+		}
+		&--orange {
+			@include transform(translate(130px, 196px) rotate(-45deg));
 		}
 	}
-
-	&--lion {
-		padding: 10px 0 0 0;
-		margin-left: -40px;
-		@include transform(scale(0.9));
-		.triangle {
-			&--pink {
-				@include transform(translate(306px, 238px) rotate(-90deg));
-			}
-			&--purple {
-				@include transform(translate(163px, 206px) rotate(225deg));
-			}
-			&--turquoise {
-				@include transform(translate(193px, 140px) rotate(135deg));
-			}
-			&--yellow {
-				@include transform(translate(114px, 29px) rotate(-45deg));
-			}
-			&--orange {
-				@include transform(translate(299px, 106px) rotate(-45deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(60px, 150px) rotate(45deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(410px, 187px) rotate(-110deg) skew(-45deg));
-			}
+	.square {
+		&--red {
+			@include transform(translate(0, 74px) rotate(0deg));
 		}
 	}
-
-	&--butterfly {
-		padding: 40px 0 0 30px;
-		@include transform(rotate(-30deg));
-		.triangle {
-			&--pink {
-				@include transform(translate(118px, 240px) rotate(240deg));
-			}
-			&--purple {
-				@include transform(translate(147px, 130px) rotate(150deg));
-			}
-			&--turquoise {
-				@include transform(translate(244px, 196px) rotate(160deg));
-			}
-			&--yellow {
-				@include transform(translate(70px, 50px) rotate(-30deg));
-			}
-			&--orange {
-				@include transform(translate(263px, 42px) rotate(205deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(139px, 204px) rotate(15deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(222px, 163px) rotate(70deg) skew(45deg));
-			}
+	.parallelogram {
+		&--green {
+			@include transform(translate(76px, 0px) skew(-45deg));
 		}
 	}
+}
 
-	&--camel {
-		padding: 25px 0 0 40px;
-		.triangle {
-			&--pink {
-				@include transform(translate(77px, 48px) rotate(180deg));
-			}
-			&--purple {
-				@include transform(translate(50px, 20px) rotate(90deg));
-			}
-			&--turquoise {
-				@include transform(translate(219px, 93px) rotate(-90deg));
-			}
-			&--yellow {
-				@include transform(translate(130px, 154px) rotate(0deg));
-			}
-			&--orange {
-				@include transform(translate(239px, 137px) rotate(-45deg));
-			}
+input[type=radio].button--bat:checked ~ div.main--tangram,
+.tangram--bat {
+	padding: 0;
+	@include transform(rotate(20deg));
+	.triangle {
+		&--pink {
+			@include transform(translate(168px, 85px) rotate(0deg));
 		}
-		.square {
-			&--red {
-				@include transform(translate(144px, 113px) rotate(45deg));
-			}
+		&--purple {
+			@include transform(translate(224px, 85px) rotate(180deg));
 		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(68px, 143px) rotate(45deg) skew(45deg));
-				width: 69px;
-			}
+		&--turquoise {
+			@include transform(translate(227px, 214px) rotate(90deg));
+		}
+		&--yellow {
+			@include transform(translate(70px, 94px) rotate(-90deg));
+		}
+		&--orange {
+			@include transform(translate(272px, 94px) rotate(-90deg));
 		}
 	}
-
-	&--dog {
-		padding: 0;
-		.triangle {
-			&--pink {
-				@include transform(translate(102px, 32px) rotate(-90deg));
-			}
-			&--purple {
-				@include transform(translate(375px, 240px) rotate(0deg));
-			}
-			&--turquoise {
-				@include transform(translate(115px, 164px) rotate(135deg));
-			}
-			&--yellow {
-				@include transform(translate(178px, 107px) rotate(90deg));
-			}
-			&--orange {
-				@include transform(translate(287px, 123px) rotate(45deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(40px, 123px) rotate(45deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(89px, 262px) rotate(0deg) skew(-45deg));			
-			}
+	.square {
+		&--red {
+			@include transform(translate(186px, 153px) rotate(45deg));
 		}
 	}
-
-	&--horse {
-		padding: 0 0 0 20px;
-		margin-top: -10px;
-		.triangle {
-			&--pink {
-				@include transform(translate(183px, 347px) rotate(45deg));
-			}
-			&--purple {
-				@include transform(translate(55px, 158px) rotate(-90deg));
-			}
-			&--turquoise {
-				@include transform(translate(120px, 0px) rotate(-90deg));
-			}
-			&--yellow {
-				@include transform(translate(140px, 117px) rotate(-45deg));
-			}
-			&--orange {
-				@include transform(translate(229px, 182px) rotate(0deg));
-			}
-		}
-		.square {
-			&--red {
-				@include transform(translate(155px, 108px) rotate(0deg));
-			}
-		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(301px, 325px) rotate(-65deg) skew(-45deg));			
-			}
+	.parallelogram {
+		&--green {
+			@include transform(translate(157px, 249px) rotate(0deg) skew(45deg));
 		}
 	}
+}
 
-	&--squirrel {
-		padding: 0;
-		.triangle {
-			&--pink {
-				@include transform(translate(249px, 300px) rotate(135deg));
-			}
-			&--purple {
-				@include transform(translate(99px, 221px) rotate(180deg));
-			}
-			&--turquoise {
-				@include transform(translate(90px, 74px) rotate(45deg));
-			}
-			&--yellow {
-				@include transform(translate(153px, 121px) rotate(0deg));
-			}
-			&--orange {
-				@include transform(translate(168px, 232px) rotate(45deg));
-			}
+input[type=radio].button--bear:checked ~ div.main--tangram,
+.tangram--bear {
+	padding: 0;
+	.triangle {
+		&--pink {
+			@include transform(translate(59px, 122px) rotate(45deg));
 		}
-		.square {
-			&--red {
-				@include transform(translate(295px, 178px) rotate(45deg));
-			}
+		&--purple {
+			@include transform(translate(340px, 274px) rotate(45deg));
 		}
-		.parallelogram {
-			&--green {
-				@include transform(translate(270px, 256px) rotate(45deg) skew(45deg));
-				width: 69px;			
-			}
+		&--turquoise {
+			@include transform(translate(170px, 124px) rotate(135deg));
+		}
+		&--yellow {
+			@include transform(translate(330px, 118px) rotate(0deg));
+		}
+		&--orange {
+			@include transform(translate(241px, 55px) rotate(-45deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(106px, 120px) rotate(0deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(145px, 222px) skew(-45deg));
+		}
+	}
+}
+
+input[type=radio].button--giraffe:checked ~ div.main--tangram,
+.tangram--giraffe {
+	padding: 0;
+	margin-top: -25px;
+	.triangle {
+		&--pink {
+			@include transform(translate(164px, 50px) rotate(0deg));
+		}
+		&--purple {
+			@include transform(translate(218px, 260px) rotate(180deg));
+		}
+		&--turquoise {
+			@include transform(translate(100px, 40px) rotate(45deg));
+		}
+		&--yellow {
+			@include transform(translate(272px, 260px) rotate(0deg));
+		}
+		&--orange {
+			@include transform(translate(166px, 263px) rotate(0deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(181px, 222px) rotate(45deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(157px, 145px) rotate(135deg) skew(-45deg));
+		}
+	}
+}
+
+input[type=radio].button--fish:checked ~ div.main--tangram,
+.tangram--fish {
+	padding: 0 0 0 50px;
+	.triangle {
+		&--pink {
+			@include transform(translate(162px, 119px) rotate(135deg));
+		}
+		&--purple {
+			@include transform(translate(162px, 231px) rotate(225deg));
+		}
+		&--turquoise {
+			@include transform(translate(244px, 192px) rotate(180deg));
+		}
+		&--yellow {
+			@include transform(translate(80px, 86px) rotate(45deg));
+		}
+		&--orange {
+			@include transform(translate(80px, 160px) rotate(-45deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(169px, 190px) rotate(0deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(246px, 155px) rotate(90deg) skew(45deg));
+		}
+	}
+}
+
+input[type=radio].button--snake:checked ~ div.main--tangram,
+.tangram--snake {
+	padding: 0 0 0 12px;
+	@include transform(scale(0.8));
+	.triangle {
+		&--pink {
+			@include transform(translate(7px, 162px) rotate(45deg));
+		}
+		&--purple {
+			@include transform(translate(-30px, 134px) rotate(90deg));
+		}
+		&--turquoise {
+			@include transform(translate(116px, 165px) rotate(135deg));
+		}
+		&--yellow {
+			@include transform(translate(281px, 109px) rotate(-90deg));
+		}
+		&--orange {
+			@include transform(translate(176px, 213px) rotate(90deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(53px, 160px) rotate(0deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(374px, 250px) rotate(45deg) skew(-45deg));
+		}
+	}
+}
+
+input[type=radio].button--turtle:checked ~ div.main--tangram,
+.tangram--turtle {
+	padding: 0;
+	.triangle {
+		&--pink {
+			@include transform(translate(335px, 222px) rotate(180deg));
+		}
+		&--purple {
+			@include transform(translate(133px, 225px) rotate(0deg));
+		}
+		&--turquoise {
+			@include transform(translate(335px, 127px) rotate(0deg));
+		}
+		&--yellow {
+			@include transform(translate(246px, 62px) rotate(-45deg));
+		}
+		&--orange {
+			@include transform(translate(172px, 135px) rotate(135deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(40px, 130px) rotate(0deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(114px, 166px) rotate(-90deg) skew(-45deg));
+			width: 69px;
+		}
+	}
+}
+
+input[type=radio].button--lion:checked ~ div.main--tangram,
+.tangram--lion {
+	padding: 10px 0 0 0;
+	margin-left: -40px;
+	@include transform(scale(0.9));
+	.triangle {
+		&--pink {
+			@include transform(translate(306px, 238px) rotate(-90deg));
+		}
+		&--purple {
+			@include transform(translate(163px, 206px) rotate(225deg));
+		}
+		&--turquoise {
+			@include transform(translate(193px, 140px) rotate(135deg));
+		}
+		&--yellow {
+			@include transform(translate(114px, 29px) rotate(-45deg));
+		}
+		&--orange {
+			@include transform(translate(299px, 106px) rotate(-45deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(60px, 150px) rotate(45deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(410px, 187px) rotate(-110deg) skew(-45deg));
+		}
+	}
+}
+
+input[type=radio].button--butterfly:checked ~ div.main--tangram,
+.tangram--butterfly {
+	padding: 40px 0 0 30px;
+	@include transform(rotate(-30deg));
+	.triangle {
+		&--pink {
+			@include transform(translate(118px, 240px) rotate(240deg));
+		}
+		&--purple {
+			@include transform(translate(147px, 130px) rotate(150deg));
+		}
+		&--turquoise {
+			@include transform(translate(244px, 196px) rotate(160deg));
+		}
+		&--yellow {
+			@include transform(translate(70px, 50px) rotate(-30deg));
+		}
+		&--orange {
+			@include transform(translate(263px, 42px) rotate(205deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(139px, 204px) rotate(15deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(222px, 163px) rotate(70deg) skew(45deg));
+		}
+	}
+}
+
+input[type=radio].button--camel:checked ~ div.main--tangram,
+.tangram--camel {
+	padding: 25px 0 0 40px;
+	.triangle {
+		&--pink {
+			@include transform(translate(77px, 48px) rotate(180deg));
+		}
+		&--purple {
+			@include transform(translate(50px, 20px) rotate(90deg));
+		}
+		&--turquoise {
+			@include transform(translate(219px, 93px) rotate(-90deg));
+		}
+		&--yellow {
+			@include transform(translate(130px, 154px) rotate(0deg));
+		}
+		&--orange {
+			@include transform(translate(239px, 137px) rotate(-45deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(144px, 113px) rotate(45deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(68px, 143px) rotate(45deg) skew(45deg));
+			width: 69px;
+		}
+	}
+}
+
+input[type=radio].button--dog:checked ~ div.main--tangram,
+.tangram--dog {
+	padding: 0;
+	.triangle {
+		&--pink {
+			@include transform(translate(102px, 32px) rotate(-90deg));
+		}
+		&--purple {
+			@include transform(translate(375px, 240px) rotate(0deg));
+		}
+		&--turquoise {
+			@include transform(translate(115px, 164px) rotate(135deg));
+		}
+		&--yellow {
+			@include transform(translate(178px, 107px) rotate(90deg));
+		}
+		&--orange {
+			@include transform(translate(287px, 123px) rotate(45deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(40px, 123px) rotate(45deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(89px, 262px) rotate(0deg) skew(-45deg));			
+		}
+	}
+}
+
+input[type=radio].button--horse:checked ~ div.main--tangram,
+.tangram--horse {
+	padding: 0 0 0 20px;
+	margin-top: -10px;
+	.triangle {
+		&--pink {
+			@include transform(translate(183px, 347px) rotate(45deg));
+		}
+		&--purple {
+			@include transform(translate(55px, 158px) rotate(-90deg));
+		}
+		&--turquoise {
+			@include transform(translate(120px, 0px) rotate(-90deg));
+		}
+		&--yellow {
+			@include transform(translate(140px, 117px) rotate(-45deg));
+		}
+		&--orange {
+			@include transform(translate(229px, 182px) rotate(0deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(155px, 108px) rotate(0deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(301px, 325px) rotate(-65deg) skew(-45deg));			
+		}
+	}
+}
+
+input[type=radio].button--squirrel:checked ~ div.main--tangram,
+.tangram--squirrel {
+	padding: 0;
+	.triangle {
+		&--pink {
+			@include transform(translate(249px, 300px) rotate(135deg));
+		}
+		&--purple {
+			@include transform(translate(99px, 221px) rotate(180deg));
+		}
+		&--turquoise {
+			@include transform(translate(90px, 74px) rotate(45deg));
+		}
+		&--yellow {
+			@include transform(translate(153px, 121px) rotate(0deg));
+		}
+		&--orange {
+			@include transform(translate(168px, 232px) rotate(45deg));
+		}
+	}
+	.square {
+		&--red {
+			@include transform(translate(295px, 178px) rotate(45deg));
+		}
+	}
+	.parallelogram {
+		&--green {
+			@include transform(translate(270px, 256px) rotate(45deg) skew(45deg));
+			width: 69px;			
 		}
 	}
 }
