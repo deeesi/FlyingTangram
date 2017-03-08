@@ -71,9 +71,9 @@
 			left: 40px;
 		}
 		&.tangram--bear {
-			@include transform(scale(0.2));
+			@include transform(scale(0.22));
 			top: 31px;
-			left: 30px;
+			left: 23px;
 		}
 		&.tangram--giraffe {
 			@include transform(scale(0.22));
@@ -95,10 +95,35 @@
 			top: 24px;
 			left: 20px;
 		}
+		&.tangram--lion {
+			@include transform(scale(0.23));
+			top: 24px;
+			left: 52px;
+		}
 		&.tangram--butterfly {
 			@include transform(rotate(-30deg) scale(0.25));
 			top: 60px;
 			left: 8px;
+		}
+		&.tangram--camel {
+			@include transform(scale(0.22));
+			top: 31px;
+			left: 28px;
+		}
+		&.tangram--dog {
+			@include transform(scale(0.21));
+			top: 27px;
+			left: 26px;
+		}
+		&.tangram--horse {
+			@include transform(scale(0.21));
+			top: 33px;
+			left: 30px;
+		}
+		&.tangram--squirrel {
+			@include transform(scale(0.23));
+			top: 19px;
+			left: 21px;
 		}
 	}
 }

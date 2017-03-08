@@ -28,12 +28,6 @@ module.exports = function (grunt) {
 				src: 'css/**',
 				dest: 'dist/'
 			},
-			images: {
-				expand: true,
-				cwd: 'src',
-				src: ['images/**', '!images/sprite/**'],
-				dest: 'dist/'
-			},
 			js: {
 				expand: true,
 				cwd: 'src',
@@ -95,29 +89,7 @@ module.exports = function (grunt) {
 				}	
 			},
 
-			images: {
-				files: [
-					'src/images/**/*.*'
-				],
-				tasks: [
-					'copy:images'
-				],
-				options: {
-					atBegin: true
-				}	
-			}
 		},
-
-		// Sprites erstellen
-/*		sprite: {
-			all: {
-				src: 'src/images/sprite/*.png',
-				retinaSrcFilter: ['src/images/sprite/*@2x.png'],
-				dest: 'src/images/spritesheet.png',
-				retinaDest: 'src/images/spritesheet.retina@2x.png',
-				destCss: 'src/scss/_sprite.scss'
-			}
-		},*/
 
 		// Melde dich mal
 		notify: {

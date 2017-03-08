@@ -23,8 +23,8 @@
 		border-top: 100px solid transparent;
 		border-bottom: 100px solid transparent;
 	}
-	&--red {
-		border-left: 100px solid $red;
+	&--orange {
+		border-left: 100px solid $orange;
 		border-top: 100px solid transparent;
 		border-bottom: 100px solid transparent;
 	}
@@ -33,8 +33,8 @@
 .square {
 	position: absolute;
 	transition: all 2s;
-	&--orange {
-		background-color: $orange;
+	&--red {
+		background-color: $red;
 		width: 70px;
 		height: 70px;
 	}
@@ -74,12 +74,12 @@
 			&--yellow {
 				@include transform(translate(0, 0));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(54px, -52px) rotate(90deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(122px, 66px) rotate(45deg));
 			}
 		}
@@ -104,12 +104,12 @@
 			&--yellow {
 				@include transform(translate(85px, 132px));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(100px, 245px) rotate(45deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(16px, 70px) rotate(45deg));
 			}
 		}
@@ -135,12 +135,12 @@
 			&--yellow {
 				@include transform(translate(57px, 194px) rotate(135deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(127px, 136px) rotate(90deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(12px, 116px) rotate(45deg));
 			}
 		}
@@ -166,12 +166,12 @@
 			&--yellow {
 				@include transform(translate(60px, 120px) rotate(135deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(130px, 196px) rotate(-45deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(0, 74px) rotate(0deg));
 			}
 		}
@@ -198,12 +198,12 @@
 			&--yellow {
 				@include transform(translate(70px, 94px) rotate(-90deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(272px, 94px) rotate(-90deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(186px, 153px) rotate(45deg));
 			}
 		}
@@ -229,12 +229,12 @@
 			&--yellow {
 				@include transform(translate(330px, 118px) rotate(0deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(241px, 55px) rotate(-45deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(106px, 120px) rotate(0deg));
 			}
 		}
@@ -261,12 +261,12 @@
 			&--yellow {
 				@include transform(translate(272px, 260px) rotate(0deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(166px, 263px) rotate(0deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(181px, 222px) rotate(45deg));
 			}
 		}
@@ -292,12 +292,12 @@
 			&--yellow {
 				@include transform(translate(80px, 86px) rotate(45deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(80px, 160px) rotate(-45deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(169px, 190px) rotate(0deg));
 			}
 		}
@@ -324,12 +324,12 @@
 			&--yellow {
 				@include transform(translate(281px, 109px) rotate(-90deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(176px, 213px) rotate(90deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(53px, 160px) rotate(0deg));
 			}
 		}
@@ -355,12 +355,12 @@
 			&--yellow {
 				@include transform(translate(246px, 62px) rotate(-45deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(172px, 135px) rotate(135deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(40px, 130px) rotate(0deg));
 			}
 		}
@@ -368,6 +368,39 @@
 			&--green {
 				@include transform(translate(114px, 166px) rotate(-90deg) skew(-45deg));
 				width: 69px;
+			}
+		}
+	}
+
+	&--lion {
+		padding: 10px 0 0 0;
+		margin-left: -40px;
+		@include transform(scale(0.9));
+		.triangle {
+			&--pink {
+				@include transform(translate(306px, 238px) rotate(-90deg));
+			}
+			&--purple {
+				@include transform(translate(163px, 206px) rotate(225deg));
+			}
+			&--turquoise {
+				@include transform(translate(193px, 140px) rotate(135deg));
+			}
+			&--yellow {
+				@include transform(translate(114px, 29px) rotate(-45deg));
+			}
+			&--orange {
+				@include transform(translate(299px, 106px) rotate(-45deg));
+			}
+		}
+		.square {
+			&--red {
+				@include transform(translate(60px, 150px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(410px, 187px) rotate(-110deg) skew(-45deg));
 			}
 		}
 	}
@@ -388,18 +421,145 @@
 			&--yellow {
 				@include transform(translate(70px, 50px) rotate(-30deg));
 			}
-			&--red {
+			&--orange {
 				@include transform(translate(263px, 42px) rotate(205deg));
 			}
 		}
 		.square {
-			&--orange {
+			&--red {
 				@include transform(translate(139px, 204px) rotate(15deg));
 			}
 		}
 		.parallelogram {
 			&--green {
 				@include transform(translate(222px, 163px) rotate(70deg) skew(45deg));
+			}
+		}
+	}
+
+	&--camel {
+		padding: 25px 0 0 40px;
+		.triangle {
+			&--pink {
+				@include transform(translate(77px, 48px) rotate(180deg));
+			}
+			&--purple {
+				@include transform(translate(50px, 20px) rotate(90deg));
+			}
+			&--turquoise {
+				@include transform(translate(219px, 93px) rotate(-90deg));
+			}
+			&--yellow {
+				@include transform(translate(130px, 154px) rotate(0deg));
+			}
+			&--orange {
+				@include transform(translate(239px, 137px) rotate(-45deg));
+			}
+		}
+		.square {
+			&--red {
+				@include transform(translate(144px, 113px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(68px, 143px) rotate(45deg) skew(45deg));
+				width: 69px;
+			}
+		}
+	}
+
+	&--dog {
+		padding: 0;
+		.triangle {
+			&--pink {
+				@include transform(translate(102px, 32px) rotate(-90deg));
+			}
+			&--purple {
+				@include transform(translate(375px, 240px) rotate(0deg));
+			}
+			&--turquoise {
+				@include transform(translate(115px, 164px) rotate(135deg));
+			}
+			&--yellow {
+				@include transform(translate(178px, 107px) rotate(90deg));
+			}
+			&--orange {
+				@include transform(translate(287px, 123px) rotate(45deg));
+			}
+		}
+		.square {
+			&--red {
+				@include transform(translate(40px, 123px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(89px, 262px) rotate(0deg) skew(-45deg));			
+			}
+		}
+	}
+
+	&--horse {
+		padding: 0 0 0 20px;
+		margin-top: -10px;
+		.triangle {
+			&--pink {
+				@include transform(translate(183px, 347px) rotate(45deg));
+			}
+			&--purple {
+				@include transform(translate(55px, 158px) rotate(-90deg));
+			}
+			&--turquoise {
+				@include transform(translate(120px, 0px) rotate(-90deg));
+			}
+			&--yellow {
+				@include transform(translate(140px, 117px) rotate(-45deg));
+			}
+			&--orange {
+				@include transform(translate(229px, 182px) rotate(0deg));
+			}
+		}
+		.square {
+			&--red {
+				@include transform(translate(155px, 108px) rotate(0deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(301px, 325px) rotate(-65deg) skew(-45deg));			
+			}
+		}
+	}
+
+	&--squirrel {
+		padding: 0;
+		.triangle {
+			&--pink {
+				@include transform(translate(249px, 300px) rotate(135deg));
+			}
+			&--purple {
+				@include transform(translate(99px, 221px) rotate(180deg));
+			}
+			&--turquoise {
+				@include transform(translate(90px, 74px) rotate(45deg));
+			}
+			&--yellow {
+				@include transform(translate(153px, 121px) rotate(0deg));
+			}
+			&--orange {
+				@include transform(translate(168px, 232px) rotate(45deg));
+			}
+		}
+		.square {
+			&--red {
+				@include transform(translate(295px, 178px) rotate(45deg));
+			}
+		}
+		.parallelogram {
+			&--green {
+				@include transform(translate(270px, 256px) rotate(45deg) skew(45deg));
+				width: 69px;			
 			}
 		}
 	}
