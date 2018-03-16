@@ -2,8 +2,9 @@
 
 ### Experiment with
 - Transforms and transitions
-- Checkboxhack
+- Checkbox hack
 - CSS only
 - no JS
+- no images
 
-### But: fancy!
+### But still fancy!
